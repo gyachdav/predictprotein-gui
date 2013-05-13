@@ -154,6 +154,7 @@ $(document).ready(function(){
             });
          
           $('.login-required').click(function(){
+            $("#mainModalLabel").text('Login Required');
              $('#modal-container').load('login.html');
             $('#mainModal').modal('show');
           });
