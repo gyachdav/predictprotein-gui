@@ -37,6 +37,8 @@
     white-space: nowrap;
     width: 100%;
   }
+  #menu a { color: #FFFFFF; text-decoration: none; }
+
   #logo {
     color: #FFFFFF;
     font-size: 16pt;
@@ -45,8 +47,11 @@
     padding-top: 0.25em;
     white-space: nowrap;
   }
-  #menu a { color: #FFFFFF; text-decoration: none; }
-  
+
+  .copy{
+    text-align: center;
+    margin: 30px;
+  }
 
   /*Related to Subscription screen may be reomved*/
   .pricing-table .plan {
