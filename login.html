@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <div id="modalTab">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="login">
+                            <form method="post" action='' name="login_form">
+                                <p>
+                                    <input type="text" class="span12" name="eid" id="email" placeholder="Email">
+                                </p>
+                                <p>
+                                    <input type="password" class="span12" name="passwd" placeholder="Password">
+                                </p>
+                                <p>
+                                    <a href="signup" class="btn btn-warning create_account">Create Account</a> 
+                                    <button type="submit" class="btn btn-primary">Sign in</button> 
+                                    <a href="#forgotpassword" data-toggle="tab">Forgot Password?</a>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="forgotpassword">
+                            <form method="post" action='' name="forgot_password">
+                                <p>
+                                    Hey this stuff happens, send us your email and we'll reset it for you!
+                                </p><input type="text" class="span12" name="eid" id="email2" placeholder="Email">
+                                <p>
+                                    <button type="submit" class="btn btn-primary">Submit</button> <a href="#login" data-toggle="tab">Wait, I remember it now!</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

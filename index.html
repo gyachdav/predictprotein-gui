@@ -1,0 +1,164 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="http://localhost/~guyyachdav/pp-results/css/bootstrap/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <script language="JavaScript" type="text/javascript" src="http://localhost/~guyyachdav/pp-results/vendor/jquery/jquery.min.js">
+</script>
+        <script language="JavaScript" type="text/javascript" src="http://localhost/~guyyachdav/pp-results/vendor/bootstrap/bootstrap.min.js">
+</script>
+        <title>
+            PP
+        </title>
+    </head>
+    <body>
+        <div class="content">
+            <table class="top-nav-bar">
+                <tbody>
+                    <tr>
+                        <td id="logo">
+                            <a href="" accesskey="1"><img src="images/Logo_horizontal_20years_trans_50px.png"></a>
+                        </td>
+                        <td id="menu">
+                            Hello Guest | <a href="#" class='results test'>My Predictions</a> | My Account | Logout
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container body">
+                <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <textarea placeholder="Enter an amino-acid sequence (one letter code)">
+</textarea>
+                </div>
+                <div class='row'>
+                    &nbsp;
+                </div>
+                <div class='row'>
+                    <center>
+                        <a class="btn btn-primary btn-large login-required">PredictProtein</a> [<a href="#'">Example Input 1</a> <a href="#'">Example Input 2</a>]
+                    </center>
+                </div>
+                <div class='row'>
+                    &nbsp;
+                </div>
+                <hr>
+                <div class='row'>
+                    <div id='what-we-provide'></div>
+                </div>
+                <div class='row'>
+                    &nbsp;
+                </div>
+                <hr>
+                <div class='row'>
+                    <div id='our-blog'></div>
+                </div>
+                <div class='row'>
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="ppfooter">
+            <div class='container'>
+                <div class="row">
+                    <div class="span3">
+                        <h3>
+                            Software
+                        </h3>
+                        <p>
+                            <a href="#">Download</a>
+                        </p>
+                        <p>
+                            <a href="#">Virtual Machine</a>
+                        </p>
+                        <p>
+                            <a href="#">Licenses</a>
+                        </p>
+                    </div>
+                    <div class="span3">
+                        <h3>
+                            Support
+                        </h3>
+                        <p>
+                            <a href="#">Documentation</a>
+                        </p>
+                        <p>
+                            <a href="#">Contact Us</a>
+                        </p>
+                    </div>
+                    <div class="span3">
+                        <h3>
+                            About
+                        </h3>
+                        <p>
+                            <a href="#">Terms of Use</a>
+                        </p>
+                        <p>
+                            <a href="#">Disclaimer</a>
+                        </p>
+                        <p>
+                            <a href="#">Rost Group</a>
+                        </p>
+                        <p>
+                            <a href="#">Biosof LLC</a>
+                        </p>
+                    </div>
+                    <div class="span3">
+                        <h3>
+                            About
+                        </h3>
+                        <p>
+                            <a href="#">Terms of Use</a>
+                        </p>
+                        <p>
+                            <a href="#">Disclaimer</a>
+                        </p>
+                        <p>
+                            <a href="#">Rost Group</a>
+                        </p>
+                        <p>
+                            <a href="#">Biosof LLC</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='container'>
+            <span class="text-right" style="width:100%">© 1992-2013 Rostlab <a href="http://www.twitter.com/rostlab" target="_blank"><img border="0" src="images/t_mini-b.png" alt="Follow rostlab on Twitter"></a></span><br>
+            <br>
+        </div>
+        </div><!-- Button to trigger modal -->
+        <!-- Modal -->
+        <div id="mainModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="mainModalLabel"></h3>
+            </div>
+            <div class="modal-body">
+                <div id='modal-container'></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div><!-- Modal -->
+        <script type="text/javascript">
+$(document).ready(function(){
+          $('#what-we-provide').load('carousel.html');
+          $('#our-blog').load('blog.html');
+          $(".results").click(function(){
+              $(".body").load('/javascript/pp-results/demo.html');
+            });
+         
+          $('.login-required').click(function(){
+             $('#modal-container').load('login.html');
+            $('#mainModal').modal('show');
+          });
+        });
+        </script>
+    </body>
+</html>

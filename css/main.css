@@ -1,0 +1,129 @@
+@CHARSET "UTF-8";
+  body,html { height: 100%; }
+  .content { min-height: 100%; }
+  .ppfooter {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 70px;
+    padding: 30px 0;
+    text-align: left;
+    /*height  400px */
+    /*margin-top  -40px*/
+  }
+  textarea {
+    border: 1px solid #cccccc;
+    height: 350px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .top-nav-bar {
+    background: url("../images/header1.png");
+    border-collapse: collapse;
+    color: white;
+    width: 100%;
+  }
+  
+  .text-right { text-align: right; }
+  
+  #menu {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 9pt;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: right;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+  #logo {
+    color: #FFFFFF;
+    font-size: 16pt;
+    padding-bottom: 0.25em;
+    padding-left: 1.5em;
+    padding-top: 0.25em;
+    white-space: nowrap;
+  }
+  #menu a { color: #FFFFFF; text-decoration: none; }
+  
+
+  /*Related to Subscription screen may be reomved*/
+  .pricing-table .plan {
+    -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+    -moz-box-shadow: 0 0 6px 2px #b0b2ab;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px #b0b2ab;
+    text-align: center;
+  }
+  
+  .plan:hover {
+    -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
+    -moz-box-shadow: 0 0 12px 3px #b0b2ab;
+    background-color: #fff;
+    box-shadow: 0 0 12px 3px #b0b2ab;
+  }
+  
+  .plan {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    background-color: #5e5f59;
+    border-radius: 5px 5px 0 0;
+    color: #ff;
+    padding: 20px;
+  }
+  
+  .plan-name-bronze {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    background-color: #665D1E;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .plan-name-silver {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    background-color: #C0C0C0;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .plan-name-gold {
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    background-color: #FFD700;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .pricing-table .plan .plan-name span { font-size: 20px; }
+  
+  .pricing-table .plan ul {
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .pricing-table .plan ul li.plan-feature { border-top: 1px solid #c5c8c0; padding: 15px 10px; }
+  
+  .pricing-three-column { margin: 0 auto; width: 80%; }
+  
+  .pricing-variable-height .plan {
+    display: inline-block;
+    float: none;
+    margin-left: 2%;
+    vertical-align: bottom;
+    zoom: 1;
+    *display: inline;
+  }
+  
+  .plan-mouseover .plan-name { background-color: #4e9a06 !important; }
+  
+  .btn-plan-select { font-size: 18px; padding: 8px 25px; }
